@@ -21,16 +21,16 @@ const preahvihear = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Build and deploy on the AI Cloud. Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.",
+  title: "Users",
+  description: "Here you'll find my projects, interests, and updates on what I'm currently working on. Feel free to explore and connect!",
   openGraph: {
-    title: "Home",
-    description: "Build and deploy on the AI Cloud. Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.",
-    url: "https://nextjs-fullstack-evening.vercel.app/",
-    siteName: "Home",
+    title: "Users",
+    description: " ",
+    url: "https://nextjs-fullstack-evening.vercel.app/user",
+    siteName: "Users",
     images: [
       {
-        url: "https://i.ytimg.com/vi/6jQdZcYY8OY/maxresdefault.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvi2kFHWTYNm2I_KD-74i5ExfoIVRKsMM4A&s",
         width: 1200,
         height: 630,
         alt: "Open Graph Image",
