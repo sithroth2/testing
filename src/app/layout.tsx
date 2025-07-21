@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "Users",
   description: "Here you'll find my projects, interests, and updates on what I'm currently working on. Feel free to explore and connect!",
   openGraph: {
-    title: "Users",
+    title: "User",
     description: " ",
     url: "https://nextjs-fullstack-evening.vercel.app/user",
     siteName: "Users",
