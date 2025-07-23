@@ -2,27 +2,27 @@ import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavbarComponent from "@/components/navbar/NavbarComponent";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "./error";
 import { Suspense } from "react";
 import Loading from "./loading";
-
+import WrapperNavber from "@/components/navbar/WrapperNavbar";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-})
+});
 
 const preahvihear = localFont({
   src: "../../public/fonts/Preahvihear-Regular.ttf",
   variable: "--font-preahvihear",
-})
+});
 
 export const metadata: Metadata = {
   title: "User",
-  description: "Here you'll find my projects, interests, and updates on what I'm currently working on. Feel free to explore and connect!",
+  description:
+    "Here you'll find my projects, interests, and updates on what I'm currently working on. Feel free to explore and connect!",
   openGraph: {
     title: "User",
     description: " ",
@@ -52,10 +52,8 @@ export default function RootLayout({
         className={`${comfortaa.variable} ${preahvihear.variable} antialiased`}
       >
         <ErrorBoundary errorComponent={Error}>
-          <NavbarComponent />
-          <Suspense fallback={<Loading/>}>
-            {children}
-          </Suspense>
+          <WrapperNavber />
+          <Suspense fallback={<Loading />}>{children}</Suspense>
         </ErrorBoundary>
       </body>
     </html>
